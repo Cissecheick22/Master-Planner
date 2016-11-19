@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="304.0" prefWidth="562.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="masterplanner.SettingsController">
+   <children>
+      <Button fx:id="RPriority" layoutX="36.0" layoutY="119.0" mnemonicParsing="false" onAction="#RPriority" prefHeight="50.0" prefWidth="138.0" text="Reset Priority Settings" />
+      <Button fx:id="RCategory" layoutX="212.0" layoutY="31.0" mnemonicParsing="false" onAction="#RCategory" prefHeight="50.0" prefWidth="146.0" text="Reset Category Settings" />
+      <Button fx:id="RActivity" layoutX="36.0" layoutY="31.0" mnemonicParsing="false" onAction="#RActivity" prefHeight="50.0" prefWidth="138.0" text="Reset Activity Settings" />
+      <Button fx:id="RStatus" layoutX="388.0" layoutY="31.0" mnemonicParsing="false" onAction="#RStatus" prefHeight="50.0" prefWidth="138.0" text="Reset Status Settings" />
+      <Button fx:id="goStatistiques" layoutX="388.0" layoutY="221.0" mnemonicParsing="false" onAction="#goStatistiques" prefHeight="50.0" prefWidth="138.0" text="Statistiques" />
+      <Button fx:id="goActivity" layoutX="212.0" layoutY="221.0" mnemonicParsing="false" onAction="#goActivity" prefHeight="50.0" prefWidth="146.0" text="Activity" />
+      <Button fx:id="gohome" layoutX="36.0" layoutY="221.0" mnemonicParsing="false" onAction="#gohome" prefHeight="50.0" prefWidth="138.0" text="Home" />
+      <Button fx:id="RAlarms" layoutX="212.0" layoutY="119.0" mnemonicParsing="false" onAction="#RAlarms" prefHeight="50.0" prefWidth="146.0" text="Reset Alarms" />
+      <Button fx:id="goprofile" layoutX="388.0" layoutY="119.0" mnemonicParsing="false" onAction="#goprofile" prefHeight="50.0" prefWidth="138.0" text="Profile" />
+   </children>
+</AnchorPane>

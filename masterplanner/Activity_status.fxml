@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="masterplanner.Activity_statusController">
+   <children>
+      <SplitPane dividerPositions="0.12684365781710916" layoutX="190.0" layoutY="77.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #383838;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox layoutX="10.0" layoutY="6.0" spacing="1.0">
+                     <children>
+                        <Button fx:id="BtnHome" mnemonicParsing="false" onAction="#BtnHome" text="Home" />
+                        <Button fx:id="BtnProfile" mnemonicParsing="false" onAction="#BtnProfile" text="Profile" />
+                        <Button fx:id="BtnActivity" mnemonicParsing="false" onAction="#BtnActivity" text="Activity" />
+                        <Button fx:id="BtnCategory" mnemonicParsing="false" onAction="#BtnCategory" text="Category" />
+                        <Button fx:id="BtnPriority" mnemonicParsing="false" onAction="#BtnPriority" text="Priority" />
+                        <Button fx:id="BtnActivityStatus" mnemonicParsing="false" onAction="#BtnActivityStatus" text="Activity Status" />
+                        <Button fx:id="BtnStatistiques" mnemonicParsing="false" onAction="#BtnStatistiques" text="Statistics" />
+                        <Button fx:id="BtnSettings" mnemonicParsing="false" onAction="#BtnSettings" text="Settings " />
+                     </children>
+                  </HBox>
+                  <Button fx:id="BtnLogout" layoutX="506.0" layoutY="6.0" mnemonicParsing="false" onAction="#BtnLogout" text="Logout" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.511744966442953" layoutX="199.0" layoutY="53.0" prefHeight="356.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TableView fx:id="ActivityStatusTableView" layoutY="49.0" onMouseClicked="#ClickActivityStatusTableView" prefHeight="354.0" prefWidth="302.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="ActivityStatusIdColum" prefWidth="133.0" text="Activity Status ID" />
+                                  <TableColumn fx:id="ActivityStatusNameColum" prefWidth="165.0" text="Activity Name" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #383838;">
+                           <children>
+                              <TextField fx:id="TxtActivityStatusId" disable="true" layoutX="14.0" layoutY="14.0" promptText="Activity Status ID" />
+                              <TextField fx:id="TxtActivityStatusName" layoutX="13.0" layoutY="64.0" promptText="Activity Status Name" />
+                              <Button fx:id="BtnActivityStatusSave" layoutX="14.0" layoutY="137.0" mnemonicParsing="false" onAction="#BtnActivityStatusSave" text="Save" />
+                              <Button fx:id="BtnActivityStatusUpdate" layoutX="93.0" layoutY="137.0" mnemonicParsing="false" onAction="#BtnActivityStatusUpdate" text="Update" />
+                              <Button fx:id="BtnAcitvityStatusDelete" layoutX="185.0" layoutY="137.0" mnemonicParsing="false" onAction="#BtnAcitvityStatusDelete" text="Delete" />
+                              <Button fx:id="BtnActivityStatusCancel" layoutX="177.0" layoutY="14.0" mnemonicParsing="false" onAction="#BtnActivityStatusCancel" text="Cancel" />
+                              <Button fx:id="BtnActivityStatusEdit" layoutX="176.0" layoutY="64.0" mnemonicParsing="false" onAction="#BtnActivityStatusEdit" prefHeight="25.0" prefWidth="52.0" text="Edit" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
